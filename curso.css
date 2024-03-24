@@ -1,0 +1,124 @@
+/*este es el css básico de la página colocaré otro comentario cuando termine*/
+
+body {
+        margin: 0;
+        padding: 0;
+        background-attachment: fixed;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(180deg, #2546BC, #329e2f);
+        background-repeat: no-repeat;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        color: white;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+}
+
+h1 {
+    font-size: calc(2.5rem + 1.38vw);
+}
+
+h2 {
+    font-size: calc(2.4rem + 0.66vw);
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4{
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/*aquí termina el css básico de la página*/
+
+/*aquí comienza el css de los cursos*/
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.infocurso{
+    margin: 0 auto;
+    width: 90%;
+    padding: 100px;
+}
+
+.container {
+    display: flex;
+    margin: auto;
+}
+
+.container div {
+    margin: auto 0;
+}
+
+.container h1 {
+    margin: 0;
+    margin-top: 30px;
+    line-height: calc(2.5rem + 1.38vw);
+}
+
+.container img {
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+@media screen and (min-width: 1441px){
+    .infocurso {
+        max-width: 1200px;
+    }
+    .container img {
+        width: 550px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 1440px){
+    .infocurso {
+        max-width: 1100px;
+    }
+    .container img {
+        width: 550px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .container img {
+        width: 450px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .infocurso {
+        padding: 50px;
+    }
+    .container img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-top: 30px;
+    }
+}
